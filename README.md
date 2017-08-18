@@ -6,7 +6,17 @@
 
 ### Description
 
-_..._
+_This is my ping pong project for week 3._
+
+## Setup Instructions
+
+1. _Access my [Repository](https://github.com/rikimontgomery/ping-pong) or my [portfolio domain](https://rikimontgomery.github.io/ping-pong/)._
+
+* _You can view the directory files online or clone them from my repository._
+
+2. _Make sure your have a text editor and your own GitHub account setup to work with your terminal._
+
+3. _Break things!_
 
 ## Specifications
 | Description        | Input          | Output  |
@@ -19,7 +29,7 @@ _..._
 
 ## Known Bugs
 
-_..._
+_The output isn't showing._
 
 ## Support and contact details
 
