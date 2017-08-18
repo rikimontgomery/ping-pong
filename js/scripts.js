@@ -13,7 +13,7 @@ function pongGame(number) {
       numberArr.push(i)
     }
   }
-  console.log(numberArr.toString());
+  numberArr.toString();
 }
 
 

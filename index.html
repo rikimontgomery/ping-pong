@@ -8,32 +8,49 @@
     <title>Title</title>
   </head>
   <body>
-    <div class="container">
+    <div class="jumbotron">
       <h1>Ping Pong</h1>
-      <h3>Let's Play!</h3>
-      <h5>Rules:</h5>
-      <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
-      <ol>
-        <li>Numbers divisible by 3 become "ping"</li>
-        <li>Numbers divisible by 5 become "ping"</li>
-        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
-      </ol>
-      <form id="generator">
-        <div class="form-group">
-          <label for="number">Give me a number:</label>
-          <input id="input" class="form-control number" type="number">
+    </div>
+    <!-- <div class="container"> -->
+<!-- left hand column -->
+      <div class="row">
+        <div id="left-column" class="col-md-3">
+          <h2>About Ping Pong</h2>
+          <h4 class="sidebar-titles">Created By:</h4>
+          <p class="sidebar-names">Riki Montgomery</p>
+          <h4 class="sidebar-titles">GitHub Username/URL:</h4>
+          <p><a href="https://github.com/rikimontgomery">rikimontgomery</a></p>
+          <h4 class="sidebar-titles">Level 2 Test for:</h4>
+          <p class="sidebar-names">Javascript</p>
         </div>
+<!-- largest column -->
+        <div id="main-column" class="col-md-9">
+          <h2>Let's Play!</h2>
+          <h4>Rules:</h4>
+          <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+          <ol>
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "ping"</li>
+            <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+          </ol>
+          <form id="generator">
+            <div class="form-group">
+              <label for="number">Enter your number here:</label>
+              <input id="number" class="form-control number" type="number">
+            </div>
 
-        <button type="submit" class="btn btn-danger">Submit</button>
+            <button type="submit" class="btn btn-danger">Ping Pong!</button>
 
-      </form>
+          </form>
+<!-- User input -->
+          <div id="lust">
+            <ul id="result">
 
-      <div id="solution">
-        <ul>
-          <li id="solutionList"></li>
-        </ul>
+            </ul>
+          </div>
+        </div>
       </div>
 <!-- end of container -->
-    </div>
+    <!-- </div> -->
   </body>
 </html>

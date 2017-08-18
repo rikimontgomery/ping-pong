@@ -2,6 +2,39 @@
   display: none;
 }
 
+.jumbotron {
+  background-color: rgb(244, 222, 181);
+  text-align: center;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+#left-column {
+  background-color: rgb(144, 187, 144);
+  min-height: 100%;
+  padding-left: 2%;
+}
+
+.sidebar-titles {
+  color: rgb(244, 222, 181);
+}
+
+.sidebar-names {
+  color: white;
+}
+
+#main-column {
+  padding-left: 2%;
+}
+
+#number {
+  display: block;
+  width: 30%;
+}
+
+
 form input[type='number']{
 
 }
