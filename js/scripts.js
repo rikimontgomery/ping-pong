@@ -25,9 +25,9 @@ function pongGame(number) {
 $(document).ready(function() {
   $("form#generator").submit(function(event) {
     event.preventDefault();
-    i = "":
-
-    $("ul#list").text(createArr(parseInt(input));
-    $("#solution").show();
+    numberArr = "";
+    var input = $("#number").val();
+    $("#list").text(pongGame(input));
+    $("#result").show();
   });
 });
