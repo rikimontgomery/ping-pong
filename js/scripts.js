@@ -1,4 +1,3 @@
-// back-end
 var numberArr =[];
 var i = "";
 
@@ -12,9 +11,9 @@ function pongGame(number) {
       numberArr.push("pong");
     } else {
       numberArr.push(i)
-      console.log(i)
     }
   }
+  console.log(numberArr.toString());
 }
 
 
@@ -26,9 +25,9 @@ function pongGame(number) {
 $(document).ready(function() {
   $("form#generator").submit(function(event) {
     event.preventDefault();
-    solution = "";
-    var input = $("#input").val();
-    $("li#list").text(numberArr(input));
+    i = "":
+
+    $("ul#list").text(createArr(parseInt(input));
     $("#solution").show();
   });
 });
