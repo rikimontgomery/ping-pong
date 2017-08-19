@@ -1,7 +1,8 @@
-var numberArr =[];
 var i = "";
 
 function pongGame(number) {
+  var numberArr =[];
+
   for (var i = 1; i <= number; i += 1) {
       if (i % 3 === 0 && i % 5 === 0) {
       numberArr.push("pingpong");
@@ -13,7 +14,8 @@ function pongGame(number) {
       numberArr.push(i)
     }
   }
-  numberArr.toString();
+  alert(numberArr);
+  return nummberArr.toString();
 }
 
 
@@ -25,9 +27,8 @@ function pongGame(number) {
 $(document).ready(function() {
   $("form#generator").submit(function(event) {
     event.preventDefault();
-    numberArr = "";
     var input = $("#number").val();
-    $("#list").text(pongGame(input));
+    $("#list").append(parseInt(pongGame(input)));
     $("#result").show();
   });
 });
