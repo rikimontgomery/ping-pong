@@ -4,7 +4,7 @@ function pongGame(number) {
   var numberArr =[];
 
   for (var i = 1; i <= number; i += 1) {
-      if (i % 3 === 0 && i % 5 === 0) {
+      if (i % 15 === 0) {
       numberArr.push("pingpong");
     } else if (i % 3 === 0) {
       numberArr.push("ping");
@@ -14,21 +14,24 @@ function pongGame(number) {
       numberArr.push(i)
     }
   }
-  alert(numberArr);
-  return nummberArr.toString();
+  return numberArr;
 }
-
-
-
-
+function buildList(numberArr) {
+  var strings = "";
+  for (ii = 0; ii < numberArr.length; ii++) {
+    strings += "<li>"+numberArr[ii]+"</li>";
+  }
+  return strings;
+}
 
 
 // front-end
 $(document).ready(function() {
   $("form#generator").submit(function(event) {
     event.preventDefault();
+
     var input = $("#number").val();
-    $("#list").append(parseInt(pongGame(input)));
+    $("#list").append(buildList(pongGame(input)));
     $("#result").show();
   });
 });
