@@ -26,10 +26,13 @@ _This is my ping pong project for week 3._
 | It can replace numbers divisible by 3 with "ping"      | 3      |   ping |
 | It can replace numbers divisible by 5 with "pong" | 5      |    pong |
 | It can replace numbers divisible by 3 and 5 with "pingpong" | 15      |    pingpong |
+| Add form clearing functionality | 15      |    ... |
+| Reverse the order of the array | 2      |    [2, 1] |
+
 
 ## Known Bugs
 
-_The output isn't showing._
+_Can't get the left hand column extend to the footer._
 
 ## Support and contact details
 
