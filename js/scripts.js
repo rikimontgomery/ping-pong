@@ -17,7 +17,7 @@ function pongGame(number) {
 }
 function buildList(numberArr) {
   var strings = "";
-  for (ii = 0; ii < numberArr.length; ii++) {
+  for (var ii = 0; ii < numberArr.length; ii++) {
     strings += "<li>"+numberArr[ii]+"</li>";
   }
   return strings;
@@ -26,23 +26,6 @@ function buildList(numberArr) {
 function resetFields() {
     $("input#number").val("");
 }
-// function to reverse the list order
-// function reversePong(number) {
-//   $("#list").empty(number); //empties the div each time
-//   var numberArr =[];
-//   for (var i = 1; i <= number; i += 1) {
-//       if (i % 15 === 0) {
-//       numberArr.push("pingpong");
-//     } else if (i % 3 === 0) {
-//       numberArr.push("ping");
-//     } else if (i % 5 === 0) {
-//       numberArr.push("pong");
-//     } else {
-//       numberArr.push(i)
-//     }
-//   }
-//   return numberArr.reverse();
-// }
 
 // front-end
 $(document).ready(function() {
@@ -50,6 +33,13 @@ $(document).ready(function() {
     event.preventDefault();
     var input = $("#number").val();
     $("#list").append(buildList(pongGame(input)));
+    $("#result").show();
+  });
+  $("#reverse").click(function(event) {
+    event.preventDefault();
+    alert("Hi");
+    var input = $("#number").val();
+    $("#list").append(buildList(pongGame(input).reverse()));
     $("#result").show();
     resetFields();
   });
