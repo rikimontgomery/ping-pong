@@ -1,8 +1,7 @@
-var i = "";
-
+// back-end logic
 function pongGame(number) {
+  $("#list").empty(number); //empties the div each time
   var numberArr =[];
-
   for (var i = 1; i <= number; i += 1) {
       if (i % 15 === 0) {
       numberArr.push("pingpong");
@@ -24,14 +23,18 @@ function buildList(numberArr) {
   return strings;
 }
 
+// function to reset the form field each time
+function resetFields() {
+    $("input#number").val("");
+}
 
 // front-end
 $(document).ready(function() {
   $("form#generator").submit(function(event) {
     event.preventDefault();
-
     var input = $("#number").val();
     $("#list").append(buildList(pongGame(input)));
     $("#result").show();
+    resetFields();
   });
 });
