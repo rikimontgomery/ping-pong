@@ -22,11 +22,27 @@ function buildList(numberArr) {
   }
   return strings;
 }
-
 // function to reset the form field each time
 function resetFields() {
     $("input#number").val("");
 }
+// function to reverse the list order
+// function reversePong(number) {
+//   $("#list").empty(number); //empties the div each time
+//   var numberArr =[];
+//   for (var i = 1; i <= number; i += 1) {
+//       if (i % 15 === 0) {
+//       numberArr.push("pingpong");
+//     } else if (i % 3 === 0) {
+//       numberArr.push("ping");
+//     } else if (i % 5 === 0) {
+//       numberArr.push("pong");
+//     } else {
+//       numberArr.push(i)
+//     }
+//   }
+//   return numberArr.reverse();
+// }
 
 // front-end
 $(document).ready(function() {
