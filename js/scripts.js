@@ -34,6 +34,7 @@ $(document).ready(function() {
     var input = $("#number").val();
     $("#list").append(buildList(pongGame(input)));
     $("#result").show();
+    resetFields();
   });
   $("#reverse").click(function(event) {
     event.preventDefault();
