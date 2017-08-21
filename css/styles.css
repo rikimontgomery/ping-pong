@@ -13,8 +13,8 @@ body {
 
 #left-column {
   background-color: rgb(144, 187, 144);
-  min-height: 100%;
-  padding-left: 2%;
+  height: 100vw;
+  padding-left: 3%;
 }
 
 .sidebar-titles {
